@@ -1,0 +1,207 @@
+.container {
+  margin: 15px 0px;
+  display: flex;
+  align-items: center;
+  flex-flow: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.Header {
+  font-size: var(--FONT_HEADER_SIZE);
+  font-family: var(--FONT_POPPINS_SEMI_BOLD);
+  color: var(--COLOR_THEME_BLACK);
+  margin: 0px;
+}
+
+.ActionContainer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.FilterIcon {
+  width: 34px;
+  background: white;
+  padding: 6px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(92, 77, 154, 0.4);
+  transition: 0.5s all;
+  cursor: pointer;
+}
+
+.FilterIcon:hover {
+  box-shadow: 1px 7px 6px rgba(92, 77, 154, 0.4);
+}
+
+.submitresetContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Table Styles */
+.Stickythead {
+  position: sticky;
+  top: 0;
+}
+
+.tablecontainer {
+  width: 100%;
+  overflow: auto;
+}
+
+.tablecontainer>table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tablecontainer>table thead th {
+  color: var(--COLOR_WHITE);
+  padding: 10px;
+  text-align: left;
+  font-family: var(--FONT_POPPINS_MEDIUM);
+  font-size: 14px;
+  background-color: var(--TABLE_HEADER_COLOR);
+}
+
+.tableHead {
+  background: var(--TABLE_HEADER_COLOR) !important;
+}
+
+.tableHead th:first-child {
+  border-radius: 5px 0px 0px 5px !important;
+}
+
+.tableHead th:last-child {
+  border-radius: 0px 5px 5px 0px !important;
+}
+
+.tablecontainer>table tbody tr:nth-child(even) td {
+  background-color: #f9f9f9 !important;
+}
+
+.tablecontainer>table tbody tr:nth-child(odd) td {
+  background-color: #ffffff;
+}
+
+.tablecontainer>table tbody tr {
+  transition: 0.5s ease-in-out;
+}
+
+.tablecontainer>table tbody tr:hover {
+  background-color: var(--COLOR_BG) !important;
+}
+
+.tablecontainer>table tbody tr td {
+  padding: 8px;
+  font-family: var(--FONT_POPPINS_MEDIUM);
+  color: var(--TEXT_COLOR);
+  font-size: 13px;
+}
+
+/* Custom pagination */
+
+.paginationdisplay {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 15px;
+  flex-flow: wrap;
+  gap: 15px;
+}
+
+.itemsstyle {
+  font-family: var(--FONT_POPPINS_REGULAR);
+  font-size: 12px;
+}
+
+.itemsstyle span {
+  font-family: var(--FONT_POPPINS_SEMI_BOLD);
+}
+
+.paginationandresult {
+  display: flex;
+  align-items: flex-start;
+  flex-flow: wrap;
+  gap: 20px;
+}
+
+.hoverContent {
+  word-break: break-word;
+  max-width: 300px;
+}
+
+.contentBox {
+  word-break: break-word;
+  max-width: 500px;
+  margin: 0px;
+}
+
+.Tabletitle {
+  font-family: var(--FONT_POPPINS_MEDIUM);
+  font-size: 13px;
+  text-align: end;
+}
+
+.amountBox {
+  text-align: end !important;
+  max-width: 300px;
+  min-width: 150px;
+}
+
+.exportIcon {
+  width: 17px;
+}
+
+/* table action icons */
+
+.actionContainer {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+@media (max-width: 375px) {
+  .ActionContainer {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+
+/* Table Input width */
+.tableInputBox {
+  min-width: 200px;
+  align-content: flex-start !important;
+}
+
+.subTable {
+  width: 100%;
+  overflow: auto;
+}
+
+.subTable>table thead th {
+  color: #434343;
+  padding: 4px 10px;
+  text-align: left;
+  font-family: var(--FONT_POPPINS_MEDIUM);
+  font-size: 14px;
+  background-color: var(--COLOR_GRAY);
+}
+
+.subTable table tbody tr td {
+  background-color: #fff !important;
+}
+
+.tableMDbox {
+  min-width: 200px;
+  width: 250px;
+  max-width: 250px;
+  align-content: flex-start !important;
+}
+
+.tableXSbox {
+  min-width: 70px;
+  width: 70px;
+  align-content: flex-start !important;
+}

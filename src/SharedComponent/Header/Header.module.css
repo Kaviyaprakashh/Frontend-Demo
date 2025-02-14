@@ -1,0 +1,161 @@
+.stickyTopHeader {
+  margin-right: 10px;
+  padding-top: 10px;
+  position: sticky;
+  z-index: 1;
+  top: 0px;
+  background: var(--COLOR_BG);
+}
+
+.applogo {
+  width: 200px;
+  animation: 0.2s movement both;
+}
+
+@keyframes movement {
+  0% {
+    width: 30px;
+    opacity: 0.5;
+  }
+
+  100% {
+    width: 200px;
+    opacity: 1;
+  }
+}
+
+.collapselogo {
+  width: 30px;
+}
+
+.stickyLogo {
+  z-index: 999;
+  margin: auto;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dashboardIcons {
+  width: 16px !important;
+}
+
+.productIcon {
+  width: 18px;
+}
+
+.mastersIcon {
+  width: 20px !important;
+}
+
+.topHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 10px;
+  padding: 6px 10px;
+  box-shadow: 0px 2px 5px 2px #e2e2e2;
+}
+
+.userData {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 3px 19px;
+}
+
+.userData p {
+  font-family: var(--FONT_POPPINS_MEDIUM);
+  font-size: 14px;
+  margin: 0px;
+  color: var(--COLOR_WHITE);
+  cursor: pointer;
+  background: var(--TABLE_HEADER_COLOR);
+  padding: 4px 15px;
+  border-radius: 10px 0px;
+}
+
+.maincontent {
+  min-height: calc(100vh - 110px);
+  padding: 10px 10px 10px 0px;
+}
+
+.drawerContainer {
+  width: 250px;
+}
+
+.drawerBtn {
+  display: none;
+}
+
+.OrderStatusTabName {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.OrderStatusTabName p {
+  padding: 6px;
+  border-radius: 50%;
+}
+
+.notificationContainer {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  cursor: pointer;
+}
+
+.notificationCount {
+  position: absolute;
+  left: 14px;
+  top: -8px;
+  background: crimson;
+  color: var(--COLOR_BG);
+  font-family: 'POPPINS_MEDIUM';
+
+  padding: 0px 3px;
+  border-radius: 50px;
+}
+
+@media (min-width: 1001px) {
+  .drawer {
+    display: none;
+  }
+
+  .drawerContainer {
+    display: none;
+  }
+
+  .mask {
+    display: none;
+  }
+
+  .body {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .SideBar {
+    display: none;
+  }
+
+  .responsiveLayout {
+    margin-left: 0px !important;
+  }
+
+  .CollapeBtn {
+    display: none;
+  }
+
+  .drawerBtn {
+    display: block;
+  }
+
+  .body {
+    padding: 0px !important;
+  }
+}

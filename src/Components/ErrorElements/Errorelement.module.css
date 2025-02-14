@@ -1,0 +1,125 @@
+.container {
+  min-height: 100vh;
+  margin: auto;
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(45deg, var(--COLOR_PRIMARY), #00000069);
+  width: 100%;
+  position: absolute;
+  top: 0px;
+}
+
+.containerBG {
+  background-image: url(../../Assets/Images/Jpg/emartbg.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.content img {
+  width: 600px;
+}
+
+.container div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content h3 {
+  font-family: var(--FONT_POPPINS_MEDIUM);
+  font-size: 30px;
+  color: var(--COLOR_WHITE);
+  margin: 0px;
+}
+
+.content p {
+  font-family: var(--FONT_POPPINS_REGULAR);
+  color: var(--COLOR_WHITE);
+}
+
+/* .content button {
+  background-image: linear-gradient(to right,
+      #f09819 0%,
+      #edde5d 51%,
+      #f09819 100%);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: var(--COLOR_WHITE);
+  border-radius: 10px;
+  display: block;
+  border: none;
+  font-family: var(--FONT_PLAYPEN_MEDIUM);
+  font-size: 14px;
+} */
+
+.content button {
+  background-image: linear-gradient(to right, #ECE9E6 0%, #FFFFFF 51%, #ECE9E6 100%);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  /* text-transform: uppercase; */
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #797979;
+  /* box-shadow: 0 0 20px #eee; */
+  border-radius: 10px;
+  display: block;
+  border: none;
+  font-family: var(--FONT_POPPINS_MEDIUM);
+  font-size: 14px;
+}
+
+.content button:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: var(--COLOR_THEME_BLACK);
+  text-decoration: none;
+}
+
+
+/* .content button:hover {
+  background-position: right center;
+  color: var(--COLOR_WHITE);
+  text-decoration: none;
+} */
+
+.NodataBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+}
+
+.NodataBlock img {
+  width: 70px;
+}
+
+.NodataBlock p {
+  font-family: var(--FONT_POPPINS_MEDIUM);
+  color: var(--COLOR_THEME_BLACK);
+  margin: 0px;
+  font-size: var(--FONT_SIZE_SM);
+}
+
+.permmisionText {
+  margin: 0px;
+  font-family: var(--FONT_POPPINS_SEMI_BOLD);
+  font-size: 18px;
+  text-align: center;
+  color: var(--COLOR_DANGER);
+  width: 40%;
+}

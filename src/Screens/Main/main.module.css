@@ -1,0 +1,557 @@
+.filterContainer {
+  align-items: flex-end !important;
+  row-gap: 10px;
+}
+
+.tablecontainer {
+  margin: 20px 0px;
+}
+
+.bgContainer {
+  padding: 10px;
+  background: var(--COLOR_WHITE);
+  border-radius: 10px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.actionContainer {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.TableIcons {
+  width: 20px;
+  cursor: pointer;
+}
+
+.FooterIcon {
+  width: 15px;
+  cursor: pointer;
+}
+
+.descriptionBox {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  max-width: 300px;
+  min-width: 200px;
+  word-break: break-word;
+}
+
+.NameBox {
+  white-space: nowrap;
+  max-width: 300px;
+  min-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.defaultBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.defaultBlock div,
+.checkBoxStyle {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.colorBox {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin: 0px;
+}
+
+.MainViewContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 10px;
+}
+
+.subHeader {
+  font-size: var(--FONT_SIZE_MEDIUM);
+  font-family: var(--FONT_POPPINS_SEMI_BOLD);
+  color: var(--COLOR_THEME_BLACK);
+  margin: 0px 0px 7px;
+}
+
+.viewMainBlock {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.viewMainBlock p,
+.UserviewBlock p {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  margin: 0px;
+}
+
+.viewMainBlock p>span:nth-child(1),
+.UserviewBlock p>span:nth-child(1) {
+  font-family: var(--FONT_POPPINS_MEDIUM);
+  min-width: 160px;
+  color: var(--COLOR_THEME_BLACK);
+}
+
+.viewMainBlock p>span:nth-child(2),
+.UserviewBlock p>span:nth-child(2) {
+  font-family: var(--FONT_POPPINS_REGULAR);
+  word-break: break-word;
+  color: var(--TEXT_COLOR);
+}
+
+.viewImageContainer {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-flow: wrap;
+}
+
+.ImageContainer {
+  padding: 10px;
+  /* border: 3px solid #ffebab; */
+  border-radius: 10px;
+  outline: 1px solid #ffd66b;
+  box-shadow: #ffebab 0px 7px 29px 0px inset;
+  overflow: hidden;
+}
+
+.viewcontent {
+  font-size: 13px;
+  font-family: var(--FONT_POPPINS_REGULAR);
+  color: var(--COLOR_THEME_BLACK);
+  margin-bottom: 2px;
+}
+
+.fileLink {
+  word-break: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-wrap: nowrap;
+  margin: 3px;
+  font-size: 12px;
+  font-family: var(--FONT_POPPINS_REGULAR);
+  color: var(--COLOR_THEME_BLACK);
+}
+
+.SubheaderBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.userAddresContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px;
+}
+
+.UserAddresBox {
+  padding: 10px;
+  border-radius: 10px;
+  background: #f7faffe0;
+  border: var(--BORDER_LAVENDER);
+}
+
+/* User Profile screen */
+.prodileContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.ProfileBlock {
+  border-radius: 13px;
+  width: 100%;
+  background-color: var(--COLOR_WHITE);
+  gap: 20px 50px;
+  padding: 20px 15px;
+  width: 100%;
+  flex-flow: wrap;
+}
+
+.viewHeader {
+  display: flex;
+  gap: 10px;
+  background-color: var(--COLOR_WHITE);
+  border-radius: 6px;
+  padding: 10px;
+  align-items: center;
+  flex-flow: wrap;
+}
+
+.ProfileImages {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: var(--COLOR_WHITE);
+  box-shadow: 0px 0px 10px 2px #e6eafa;
+  /* margin: 10px; */
+}
+
+.ProfileImages img {
+  width: 200px;
+  height: 200px;
+}
+
+.ProfileImages div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ProfileImages div img {
+  width: 31px;
+  height: 31px;
+  background: var(--COLOR_WHITE);
+  padding: 7px;
+  border-radius: 9px;
+  cursor: pointer;
+  box-shadow: 0px 1px 7px 1px var(--COLOR_GRAY);
+}
+
+.UserviewBlock {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  padding: 20px 30px;
+  border-radius: 5px;
+  background: var(--COLOR_WHITE);
+}
+
+/* linear-gradient(45deg, #fedfdf8a, #ddd4ff54) */
+.ViewuserDetails {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.profileHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profileHeader h3 {
+  margin: 0px;
+  color: var(--COLOR_PRIMARY) !important;
+  font-size: var(--FONT_SIZE_MEDIUM);
+  font-family: var(--FONT_POPPINS_SEMI_BOLD);
+}
+
+.profileHeader img {
+  width: 20px;
+}
+
+@media (max-width: 1100px) {
+  .ViewuserDetails {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Dashboard */
+.dashboardCard {
+  border-radius: 10px;
+  border: var(--BORDER_LAVENDER);
+  padding: 10px;
+  /* box-shadow: #dafffb52 0px 4px 24px 0px; */
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 15px 25px;
+  height: 100%;
+  cursor: pointer;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: var(--COLOR_WHITE);
+  /* background: linear-gradient(45deg, #fffae273, #ffffff); */
+}
+
+.dashboardCard div {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.dashboardCard img {
+  width: 30px;
+}
+
+.dashboardCard p {
+  font-size: 24px;
+  margin: 0px;
+  font-family: var(--FONT_POPPINS_MEDIUM);
+  color: var(--COLOR_THEME_BLACK);
+}
+
+.dashboardCard h3 {
+  font-family: var(--FONT_POPPINS_REGULAR);
+  font-size: 15px;
+  margin: 0px;
+  color: var(--COLOR_PRIMARY);
+}
+
+.RelatedproductCards {
+  background-color: #faf9e6;
+  padding: 6px 10px;
+  border-radius: 5px;
+  border: 1px solid #ffe885;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.RelatedproductCards p {
+  margin: 5px 0px;
+  font-family: var(--FONT_POPPINS_MEDIUM);
+  font-size: 13px;
+  /* word-break: break-all; */
+  text-overflow: ellipsis;
+  overflow: hidden;
+  cursor: pointer;
+  white-space: nowrap;
+  color: var(--COLOR_THEME_BLACK);
+}
+
+.removeBtn {
+  float: right;
+  padding: 6px 8px;
+  background: linear-gradient(312deg, #7a0000, #f20000);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.removeBtn img {
+  width: 15px;
+  height: 15px;
+}
+
+.optionTitle {
+  font-size: 13px;
+  color: var(--COLOR_THEME_BLACK);
+  font-family: var(--FONT_POPPINS_MEDIUM);
+  margin: 0px;
+}
+
+.amountBox {
+  text-align: end !important;
+  max-width: 300px;
+  min-width: 155px;
+}
+
+.weightContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+/* Table Input width */
+.tableInputBox {
+  min-width: 200px;
+  align-content: flex-start !important;
+}
+
+.tableSmallbox {
+  min-width: 150px;
+  width: 150px;
+  align-content: flex-start !important;
+}
+
+.tableXSbox {
+  min-width: 70px;
+  width: 70px;
+  align-content: flex-start !important;
+}
+
+.tableMDbox {
+  min-width: 200px;
+  width: 250px;
+  max-width: 250px;
+  align-content: flex-start !important;
+}
+
+.CheckBoxContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  flex-flow: wrap;
+}
+
+.CheckBoxContainer div {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-end;
+  flex-flow: wrap;
+}
+
+.CheckBoxContainer div p {
+  font-family: var(--FONT_POPPINS_MEDIUM);
+  color: var(--COLOR_THEME_BLACK);
+  margin-top: 5;
+  margin-bottom: 0;
+}
+
+@media (max-width: 992px) {
+  .viewMainBlock p {
+    flex-flow: wrap;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .viewMainBlock p,
+  .UserviewBlock p {
+    flex-flow: wrap;
+  }
+}
+
+.reviewerContainer {
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.reviewerContainer>div {
+  background: #fff;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  border: 1px solid #b4d3dd;
+  border-radius: 4px;
+  padding: 15px 15px;
+  gap: 10px;
+  box-shadow: 1px 0px 7px 0px #00416826;
+}
+
+.permissionContainer {
+  padding: 5px;
+  background: var(--COLOR_BG);
+  border-radius: 10px;
+  box-shadow: 1px 0px 5px 1px #d6d6d6d6;
+  margin-bottom: 25px;
+  border: var(--BORDER_LAVENDER);
+}
+
+.permissionHeader {
+  display: flex;
+  /* justify-content: space-between; */
+  padding: 8px 10px;
+  gap: 10px;
+  align-items: center;
+  /* background: var(--COLOR_PRIMARY); */
+  /* border-radius: 10px;*/
+}
+
+.permissionHeader h3 {
+  margin: 0;
+  color: var(--COLOR_THEME_BLACK);
+}
+
+.PermissionBox {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  /* overflow: auto;
+  width: 100%; */
+  flex-wrap: nowrap;
+}
+
+.menuBox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.menuBox p {
+  font-family: var(--FONT_POPPINS_MEDIUM);
+  /* white-space: nowrap; */
+}
+
+/* Permission table */
+
+.Permissiontablecontainer {
+  width: 100%;
+  overflow: auto;
+  padding: 10px;
+}
+
+.Permissiontablecontainer table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.Permissiontablecontainer table thead th {
+  color: var(--COLOR_WHITE);
+  padding: 5px 10px;
+  text-align: left;
+  font-family: var(--FONT_POPPINS_MEDIUM);
+  font-size: 14px;
+  background-color: var(--COLOR_PRIMARY);
+}
+
+.tableHead {
+  background: var(--TABLE_HEADER_COLOR) !important;
+}
+
+.tableHead th:first-child {
+  border-radius: 5px 0px 0px 5px !important;
+}
+
+.tableHead th:last-child {
+  border-radius: 0px 5px 5px 0px !important;
+}
+
+.Permissiontablecontainer table tbody tr:nth-child(even) td {
+  background-color: #f9f9f9 !important;
+}
+
+.Permissiontablecontainer table tbody tr:nth-child(odd) td {
+  background-color: #ffffff;
+}
+
+.Permissiontablecontainer table tbody tr {
+  transition: 0.5s ease-in-out;
+}
+
+.Permissiontablecontainer table tbody tr:hover {
+  background-color: var(--COLOR_BG) !important;
+}
+
+.Permissiontablecontainer table tbody tr td {
+  padding: 5px 10px;
+  font-family: var(--FONT_POPPINS_MEDIUM);
+  color: var(--TEXT_COLOR);
+  font-size: 13px;
+}
+
+.permissionThead th:first-child {
+  border-radius: 5px 0px 0px 5px !important;
+}
+
+.permissionThead th:last-child {
+  border-radius: 0px 5px 5px 0px !important;
+}

@@ -1,0 +1,168 @@
+.AuthButton {
+  background-image: linear-gradient(to right,
+      #f09819 0%,
+      #edde5d 51%,
+      #f09819 100%);
+  padding: 10px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: var(--COLOR_WHITE);
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  border: none;
+  font-family: var(--FONT_POPPINS_MEDIUM);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.AuthButton:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: var(--COLOR_WHITE);
+  text-decoration: none;
+}
+
+.MainButton {
+  background: linear-gradient(184deg, #ffc53f, #ffb110);
+  min-width: 100px;
+  padding: 7px 10px;
+  border-radius: 6px;
+  border: none;
+  color: var(--COLOR_WHITE);
+  font-size: var(--FONT_SIZE_REGULAR);
+  font-family: var(--FONT_POPPINS_MEDIUM);
+  cursor: pointer;
+}
+
+.submitBTN {
+  background-image: linear-gradient(to right, #f09819 0%, #ffb200 51%, #f09819 100%);
+  background-size: 200% auto;
+  color: var(--COLOR_WHITE);
+
+  transition: 0.5s all;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.resetBTN {
+  background: #ffffff;
+  color: #3c3c3c;
+  transition: 0.5s all;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.DeleteBtn {
+  background: linear-gradient(277deg, #d30000, #9d0000);
+  color: var(--COLOR_WHITE);
+
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  float: right;
+  transition: 0.5s all;
+}
+
+.addBTN {
+  background: linear-gradient(45deg, #00d4ff, #006cff);
+  color: var(--COLOR_WHITE);
+
+  border-radius: 10px;
+  transition: 0.5s all;
+  box-shadow: 0 4px 6px rgba(92, 77, 154, 0.4);
+}
+
+.updateBTN {
+  background: #a986f5;
+  color: var(--COLOR_WHITE);
+
+  transition: 0.5s all;
+  box-shadow: 0 4px 6px rgba(169, 134, 245, 0.4);
+}
+
+.submitBTN:hover {
+  /* background: #ffb74d; */
+  box-shadow: 0 4px 6px rgb(196 196 196);
+  background-position: right center;
+}
+
+.resetBTN:hover {
+  background: #f6f6f6;
+  box-shadow: 0 6px 8px rgb(164 164 164 / 60%);
+}
+
+.addBTN:hover {
+  box-shadow: 0 6px 8px rgba(92, 77, 154, 0.6);
+  background: linear-gradient(45deg, #00b4d9, #0056cc);
+}
+
+.DeleteBtn:hover {
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+  background-size: 150% auto;
+}
+
+.updateBTN:hover {
+  background: #8c6ddb;
+  box-shadow: 0 6px 8px rgba(169, 134, 245, 0.6);
+}
+
+.modalOkBTN {
+  background: linear-gradient(45deg, #00346b, #0064afe3, #00346b);
+  transition: 0.5s;
+  background-size: 200% auto;
+  box-shadow: 0 4px 6px #b8d9ff66
+}
+
+.modalOkBTN:hover {
+  background-position: right center;
+  box-shadow: 0 6px 8px rgb(164 164 164 / 60%);
+}
+
+.BackBtn {
+  background: crimson;
+}
+
+.downloadBtn {
+  background-image: linear-gradient(to right,
+      #ff512f 0%,
+      #f09819 51%,
+      #ff512f 100%);
+  transition: 0.5s;
+  background-size: 200% auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.downloadBtn:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: var(--COLOR_WHITE);
+  text-decoration: none;
+}
+
+.exportBtn {
+  background: var(--COLOR_PRIMARY);
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  height: 35px;
+  min-width: 35px;
+  transition: 0.5s;
+  box-shadow: 1px 2px 2px gray;
+}
+
+.exportBtn:hover {
+  box-shadow: 1px 3px 4px gray;
+}
+
+.editBtn {
+  background-image: linear-gradient(to right, #9a9a9a 0%, #c0c0c0 51%, #9a9a9a 100%);
+  background-size: 200% auto;
+  transition: 0.5s;
+  box-shadow: 1px 1px 4px 1px #c5c5c5;
+}
+
+.editBtn:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  text-decoration: none;
+  box-shadow: 1px 2px 4px 1px #c5c5c5;
+}

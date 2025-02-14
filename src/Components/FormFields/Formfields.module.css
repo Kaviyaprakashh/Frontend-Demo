@@ -1,0 +1,173 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.fieldContainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.fieldContainer img {
+  width: 17px;
+  top: 15px;
+  right: 10px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.InputBox {
+  border-radius: 7px;
+  height: 40px;
+  width: 100%;
+  padding: 1px 15px;
+  outline: none;
+  font-family: var(--FONT_POPPINS_REGULAR);
+  font-size: var(--FONT_SIZE_SM);
+  transition: 0.7s all;
+  color: var(--COLOR_THEME_BLACK);
+}
+
+.authStyle {
+  border: var(--BORDER_LAVENDER);
+  box-shadow: var(--SHADOW_FORMS);
+}
+
+.mainStyle {
+  border: var(--BORDER_NORMAL_FIELDS);
+}
+
+.InputBox:hover,
+.InputBox:active,
+.InputBox:focus {
+  border: var(--BORDER_ACTIVE_FIELDS);
+}
+
+.Label {
+  margin: 0px;
+  font-family: var(--FONT_POPPINS_REGULAR);
+  font-size: var(--FONT_SIZE_REGULAR);
+  color: var(--COLOR_THEME_BLACK);
+}
+
+.requiredIcon {
+  color: var(--COLOR_DANGER);
+}
+
+.ErroText {
+  font-size: 12px;
+  margin: 0px;
+  color: var(--COLOR_DANGER);
+  font-family: var(--FONT_POPPINS_REGULAR);
+}
+
+.fileInputContainer {
+  display: flex;
+  border: var(--BORDER_NORMAL_FIELDS);
+  border-radius: 7px;
+  justify-content: space-between;
+  padding-left: 10px;
+  height: 40px;
+  align-items: center;
+  width: 100%;
+}
+
+.fileInputContainer p {
+  font-size: var(--FONT_SIZE_SM);
+  font-family: var(--FONT_POPPINS_REGULAR);
+  margin: 0px;
+  align-content: center;
+}
+
+.fileInputBtn {
+  background: var(--COLOR_PRIMARY);
+  /* padding-right: 10px; */
+  height: 100%;
+  border-radius: 0px 7px 7px 0px;
+  color: var(--COLOR_WHITE);
+  width: 120px;
+  text-align: center;
+  align-content: center;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+
+.fileInputBtn:hover {
+  background: #001f55;
+}
+
+.filename {
+  text-overflow: ellipsis;
+  word-break: break-word;
+  overflow: hidden;
+  width: calc(100% - 120px);
+  height: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #fff;
+  height: fit-content;
+}
+
+.Tableimage {
+  width: 60px;
+  height: 60px;
+}
+
+.ViewImage {
+  width: 100px;
+  height: 100px;
+}
+
+.GalleryViewImage {
+  width: 180px;
+  height: 180px;
+}
+
+.colorInput {
+  margin: 0px;
+  border: 1px solid rgb(93 93 93 / 30%);
+  width: fit-content;
+  padding: 6px 20px;
+  border-radius: 7px;
+  box-shadow: 1px 1px 7px 2px #cacacac7;
+  font-size: 12px;
+  font-family: var(--FONT_POPPINS_MEDIUM);
+  text-align: center;
+}
+
+.labeldescription {
+  color: #ff6606;
+  font-size: 12px;
+  margin-left: 6px;
+  font-family: var(--FONT_POPPINS_REGULAR);
+}
+
+.clearIcon {
+  width: 10px;
+  margin: 0px 10px;
+  cursor: pointer;
+}
+
+.settingIcon {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.TableIcons {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.CLEAR_ICON {
+  width: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.SmallIcons {
+  cursor: pointer;
+}

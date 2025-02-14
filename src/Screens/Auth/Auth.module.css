@@ -1,0 +1,76 @@
+.AuthBg {
+  background-color: var(--COLOR_PRIMARY);
+  min-height: calc(100vh - 20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0px;
+  width: 100%;
+}
+
+.SigninVector {
+  width: 45%;
+}
+
+.authContainer {
+  display: flex;
+  background: linear-gradient(45deg, white, #ffffff6b, #ffffff4f);
+  border-radius: 10px;
+  padding: 20px;
+  gap: 10px;
+  max-width: 1000px;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.container {
+  background: var(--COLOR_BG);
+  padding: 30px;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+  box-shadow: rgb(255 255 255 / 55%) 0px 7px 29px 0px inset;
+}
+
+.Logo {
+  width: 280px;
+  margin: auto;
+}
+
+
+
+@media (max-width: 992px) {
+  .SigninVector {
+    display: none;
+  }
+
+  .container {
+    width: 100%;
+  }
+}
+
+@media (min-width:768px) and (max-width: 992px) {
+  .authContainer {
+    width: 70%;
+  }
+
+  .container {
+    gap: 30px;
+  }
+}
+
+@media (max-width:576px) {
+  .Logo {
+    width: 230px;
+  }
+
+  .authContainer {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+}

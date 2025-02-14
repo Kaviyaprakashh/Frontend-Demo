@@ -1,0 +1,293 @@
+body {
+  margin: 0px;
+}
+
+@font-face {
+  font-family: "POPPINS_LIGHT";
+  src: url(./Assets/Fonts/Poppinns/Poppins-Light.ttf);
+}
+
+@font-face {
+  font-family: "POPPINS_REGULAR";
+  src: url(./Assets/Fonts/Poppinns/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: "POPPINS_MEDIUM";
+  src: url(./Assets/Fonts/Poppinns/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: "POPPINS_SEMI_BOLD";
+  src: url(./Assets/Fonts/Poppinns/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "POPPINS_BOLD";
+  src: url(./Assets/Fonts/Poppinns/Poppins-Bold.ttf);
+}
+
+:root {
+  ---FONT_POPPINS_LIGHT: "POPPINS_LIGHT";
+  --FONT_POPPINS_REGULAR: "POPPINS_MEDIUM";
+  --FONT_POPPINS_MEDIUM: "POPPINS_MEDIUM";
+  --FONT_POPPINS_SEMI_BOLD: "POPPINS_SEMI_BOLD";
+  --FONT_POPPINS_BOLD: "POPPINS_BOLD";
+
+  /* COLORS */
+
+  --COLOR_PRIMARY: #274375;
+  --COLOR_GRAY: #d7d7d7;
+  --COLOR_SECONDARY: #ffcc33;
+  --COLOR_WHITE: #fff;
+  --COLOR_BLACK: #000;
+  --COLOR_THEME_BLACK: #010f1c;
+  --COLOR_DANGER: #e80000;
+  --COLOR_BG: #f0f5ff;
+  --PAGINATION_HOVER_COLOR: #1c3664;
+  --TABLE_HEADER_COLOR: #93a1ba;
+  --SELECTED_BG: #ffffff42;
+  --TEXT_COLOR: #3c3c3c;
+
+  /* FORM FIELDS BORDER */
+
+  --BORDER_ACTIVE_FIELDS: 1px solid var(--COLOR_PRIMARY);
+  --BORDER_NORMAL_FIELDS: 1px solid #d6d6d6;
+  --BORDER_LAVENDER: 1px solid #cedfff;
+  --BORDER_ERROR: 1px solid #ff5a5a;
+
+  /* FONT SIZES */
+
+  --FONT_SIZE_SM: 13px;
+  --FONT_SIZE_REGULAR: 15px;
+  --FONT_SIZE_MEDIUM: 18px;
+  --FONT_HEADER_SIZE: 22px;
+
+  /* BOX SHADOW */
+
+  --SHADOW_FORMS: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.Label {
+  margin: 0px;
+  font-family: var(--FONT_POPPINS_REGULAR);
+  font-size: var(--FONT_SIZE_REGULAR);
+  color: var(--COLOR_THEME_BLACK);
+}
+
+.requiredIcon {
+  color: var(--COLOR_DANGER);
+}
+
+.sliderShrink {
+  transition: all 0.3s !important;
+}
+
+.sliderExpand {
+  transition: all 0.3s !important;
+}
+
+.contentanimationOut {
+  transition: all 0.3s !important;
+}
+
+.contentanimationIn {
+  transition: all 0.3s !important;
+}
+
+/* Hide Select field default border */
+.ant-select-selector {
+  border: none !important;
+  color: var(--TEXT_COLOR);
+}
+
+
+
+/* Chnage the bg color for selected date in datepicker */
+
+.ant-picker-cell-selected .ant-picker-cell-inner {
+  background-color: var(--COLOR_PRIMARY) !important;
+  color: #fff;
+}
+
+/* Change background color for selected time in TimePicker */
+.ant-picker-time-panel-cell-selected .ant-picker-time-panel-cell-inner {
+  background-color: var(--COLOR_PRIMARY);
+  color: #fff;
+}
+
+/* Change background color for OK button in TimePicker */
+.ant-picker-ok button {
+  background-color: var(--COLOR_PRIMARY);
+  color: #fff;
+  border: none;
+}
+
+/* Optional: Hover state for OK button */
+.ant-picker-ok button:hover {
+  background-color: var(--COLOR_PRIMARY);
+}
+
+.Checkbox .ant-checkbox-checked .ant-checkbox-inner {
+  background: var(--COLOR_SECONDARY) !important;
+  border: 2px solid #fbc817 !important;
+}
+
+.Checkbox .ant-checkbox .ant-checkbox-inner {
+  border: 2px solid var(--COLOR_PRIMARY);
+}
+
+/* Header Side Bar */
+
+.ant-menu-item {
+  font-size: 15px !important;
+  background: none !important;
+}
+
+.ant-menu-item:hover,
+.ant-menu-submenu-title:hover {
+  background: var(--SELECTED_BG) !important;
+}
+
+.ant-menu-submenu-selected>.ant-menu-submenu-title {
+  background: var(--SELECTED_BG) !important;
+}
+
+.ant-menu-item-selected {
+  background: var(--SELECTED_BG) !important;
+}
+
+.ant-menu-item-selected .ant-menu-title-content {
+  color: #fff !important;
+}
+
+.ant-menu-title-content {
+  font-size: 15px !important;
+  font-family: var(--FONT_POPPINS_MEDIUM) !important;
+  color: var(--COLOR_WHITE) !important;
+}
+
+.ant-menu-submenu-popup.ant-menu-submenu {
+  background: var(--COLOR_PRIMARY) !important;
+}
+
+.ant-menu,
+.ant-menu-sub,
+.ant-menu-inline {
+  background: transparent !important;
+}
+
+/* END */
+
+/* antd pagination designs */
+
+.ant-pagination-item-active:hover a,
+.ant-pagination-item:hover a {
+  color: #000000 !important;
+}
+
+.ant-pagination-item-active a {
+  border-radius: 10px !important;
+  background-color: var(--COLOR_PRIMARY) !important;
+  color: #ffffff !important;
+  transition: 0.5s all;
+}
+
+.ant-pagination-item-active a:hover {
+  background-color: var(--PAGINATION_HOVER_COLOR) !important;
+  color: var(--COLOR_WHITE) !important;
+}
+
+.ant-pagination-item-active,
+.ant-pagination-item,
+.ant-pagination-next,
+.ant-pagination-prev {
+  min-width: 33px !important;
+  height: 30px !important;
+  border-radius: 50% !important;
+  font-size: 15px;
+}
+
+.ant-pagination-next button:hover,
+.ant-pagination-prev button:hover {
+  color: var(--COLOR_PRIMARY) !important;
+  border-radius: 10px !important;
+  background-color: var(--COLOR_BG) !important;
+}
+
+/* collapse */
+.filterAccourdian .ant-collapse-header {
+  display: none !important;
+}
+
+.filterAccourdian .ant-collapse-content-box {
+  padding: 0px !important;
+}
+
+/* Antd Switch */
+
+.ant-switch-checked .ant-switch-inner {
+  background: green !important;
+}
+
+.ant-switch .ant-switch-inner {
+  background: var(--COLOR_DANGER);
+}
+
+.contant1_width {
+  max-width: 300px !important;
+  width: 300px !important;
+  align-content: flex-start !important;
+}
+
+.contant2_width {
+  align-content: flex-start !important;
+}
+
+.sortOrderBox {
+  width: 160px;
+  min-width: 16px;
+  align-content: flex-start !important;
+}
+
+/* Customize scrollbar width */
+.sideBar ::-webkit-scrollbar,
+.autoScroll ::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track (the background of the scrollbar) */
+.sideBar ::-webkit-scrollbar-track,
+.autoScroll ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle (the draggable part of the scrollbar) */
+.sideBar ::-webkit-scrollbar-thumb,
+.autoScroll ::-webkit-scrollbar-thumb {
+  background-color: rgb(163, 163, 163);
+  border-radius: 10px;
+  border: 2px solid #f1f1f1;
+}
+
+/* Handle on hover */
+.sideBar ::-webkit-scrollbar-thumb:hover,
+.autoScroll ::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.ErroText {
+  font-size: 11px;
+  margin: 0px;
+  color: var(--COLOR_DANGER);
+  font-family: var(--FONT_POPPINS_REGULAR);
+}
+
+.autoScroll .ant-select-selector {
+  overflow: auto;
+}
+
+textarea {
+  resize: none;
+}
